@@ -1,25 +1,25 @@
 ---
 title: "About Me"
-date: 2025-03-01
+date: 2025-02-18
 description: "Personal intro and contact"
 ---
 
-# About Me
+**Hello!** Welcome to my blog! My name is **Jacky**, and I am a front-end developer who is leveling up and playing with **React** development. I will record my learning experience, share my technical experience, and record my life here.
 
-Your personal intro goes here. You can describe your background, tech stack, work experience, etc.
+### Hobbies
 
-## Contact
+- Coding
+- AI / Web3
+- Outdoor Activities (Fishing, Hiking, Camping)
+- Electronic Devices
+- Learning by building
 
-- Email: your@email.com
-- GitHub: [your-username](https://github.com/your-username)
-- Twitter: [@your-handle](https://twitter.com/your-handle)
+### Feel free to reach out
 
-## Skills / Tech Stack
+- Mail: fengjacky84@gmail.com
+- Github: [Alwaysdebugg](https://github.com/Alwaysdebugg)
+- Portfolio: [My Portfolio](https://alwaysdebugg.github.io/myPortfolio/)
 
-- Languages: ...
-- Frameworks & tools: ...
-- Other: ...
+### Thx
 
----
-
-Feel free to reach out through any of the above!
+Thank you for visiting! I hope you find valuable content in my blog.

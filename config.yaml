@@ -1,8 +1,8 @@
 # Personal Blog - Hugo + PaperMod
 # https://github.com/adityatelange/hugo-PaperMod
 
-baseURL: "https://yourdomain.com/"
-title: "My Blog"
+baseURL: "https://alwaysdebugg.github.io/"
+title: "Jf | Blogs"
 defaultContentLanguage: en
 copyright: "© {year} All rights reserved."
 
@@ -58,8 +58,8 @@ menu:
 params:
   env: production
   mainSections: ["posts"]
-  description: "Personal tech blog - notes on technology and ideas"
-  author: "Your Name"
+  description: "dev world"
+  author: "Jacky"
 
   # Theme & display
   defaultTheme: auto        # light / dark / auto
@@ -116,10 +116,7 @@ params:
   socialIcons:
     - name: github
       title: GitHub
-      url: "https://github.com/your-username"
-    - name: twitter
-      title: Twitter
-      url: "https://twitter.com/your-handle"
+      url: "https://github.com/Alwaysdebugg"
 
   # Edit link (optional, points to GitHub repo)
   editPost:
