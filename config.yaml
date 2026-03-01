@@ -1,0 +1,136 @@
+# Personal Blog - Hugo + PaperMod
+# https://github.com/adityatelange/hugo-PaperMod
+
+baseURL: "https://yourdomain.com/"
+title: "My Blog"
+defaultContentLanguage: en
+copyright: "© {year} All rights reserved."
+
+# Theme
+theme: PaperMod
+
+# Build options
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: true      # include drafts; set false for production
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+mainsections: ["posts"]
+
+# Pagination - home page post list
+pagination:
+  disableAliases: false
+  pagerSize: 10
+
+# Categories & Tags
+taxonomies:
+  category: categories
+  tag: tags
+
+# Navigation menu
+menu:
+  main:
+    - name: Home
+      url: /
+      weight: 1
+    - name: Posts
+      url: posts/
+      weight: 2
+    - name: Categories
+      url: categories/
+      weight: 3
+    - name: Tags
+      url: tags/
+      weight: 4
+    - name: Archives
+      url: archives/
+      weight: 5
+    - name: About
+      url: about/
+      weight: 10
+    - name: Search
+      url: search/
+      weight: 20
+
+# Global params
+params:
+  env: production
+  mainSections: ["posts"]
+  description: "Personal tech blog - notes on technology and ideas"
+  author: "Your Name"
+
+  # Theme & display
+  defaultTheme: auto        # light / dark / auto
+  ShowShareButtons: true
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
+  ShowRssButtonInSectionTermList: true
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+
+  # Comments - Giscus (GitHub Discussions)
+  comments: true
+  giscus:
+    repo: "your-username/your-repo"      # replace with your GitHub repo
+    repoId: ""                            # get from giscus.app
+    category: "Announcements"
+    categoryId: ""                        # get from giscus.app
+    mapping: "pathname"
+    strict: "0"
+    reactionsEnabled: "1"
+    emitMetadata: "0"
+    inputPosition: "bottom"
+    theme: "preferred_color_scheme"       # light / dark / preferred_color_scheme
+    lang: "en"
+
+  # Home mode: false=post list, true=Profile
+  profileMode:
+    enabled: false
+    title: "About Me"
+    imageUrl: "/images/avatar.png"
+    imageTitle: "Avatar"
+    subtitle: "Tech · Ideas · Sharing"
+    buttons:
+      - name: Posts
+        url: posts
+      - name: Archives
+        url: archives
+      - name: Tags
+        url: tags
+
+  # Home page content (when not in Profile mode)
+  homeInfoParams:
+    Title: "Welcome to My Blog"
+    Content: |
+      Notes on technology, projects, and ideas.
+      - **Markdown** authoring
+      - **Categories** & **Tags**
+      - **Dark mode** & **Search**
+
+  # Social links
+  socialIcons:
+    - name: github
+      title: GitHub
+      url: "https://github.com/your-username"
+    - name: twitter
+      title: Twitter
+      url: "https://twitter.com/your-handle"
+
+  # Edit link (optional, points to GitHub repo)
+  editPost:
+    URL: "https://github.com/your-username/your-repo/edit/main/content"
+    Text: "Edit this page"
+    appendFilePath: true
+
+# Markdown / Goldmark
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    highlight:
+      noClasses: false

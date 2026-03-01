@@ -1,0 +1,26 @@
+{{- /* Giscus comments - GitHub Discussions */ -}}
+{{- /* Config: https://giscus.app */ -}}
+{{- $giscus := .Site.Params.giscus -}}
+{{- if $giscus -}}
+  {{- if and $giscus.repo $giscus.repoId $giscus.categoryId -}}
+<div class="giscus comments">
+  <script src="https://giscus.app/client.js"
+    data-repo="{{ $giscus.repo }}"
+    data-repo-id="{{ $giscus.repoId }}"
+    data-category="{{ $giscus.category | default "Announcements" }}"
+    data-category-id="{{ $giscus.categoryId }}"
+    data-mapping="{{ $giscus.mapping | default "pathname" }}"
+    data-strict="{{ $giscus.strict | default "0" }}"
+    data-reactions-enabled="{{ $giscus.reactionsEnabled | default "1" }}"
+    data-emit-metadata="{{ $giscus.emitMetadata | default "0" }}"
+    data-input-position="{{ $giscus.inputPosition | default "bottom" }}"
+    data-theme="{{ $giscus.theme | default "preferred_color_scheme" }}"
+    data-lang="{{ $giscus.lang | default "en" }}"
+    crossorigin="anonymous"
+    async>
+  </script>
+</div>
+  {{- else -}}
+{{- /* Giscus not configured: set repo, repoId, categoryId in config.yaml params.giscus */ -}}
+  {{- end -}}
+{{- end -}}

@@ -1,0 +1,35 @@
+# Netlify CMS - Publish posts via Web UI without touching code
+# Access /admin after deploying to Netlify
+# Requires Netlify Identity and GitHub OAuth
+
+backend:
+  name: github
+  repo: your-username/your-repo   # replace with your repo
+  branch: main
+
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+locale: "en"
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "content/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: true }
+      - { label: "Description", name: "description", widget: "text", required: false }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Categories", name: "categories", widget: "list" }
+      - label: "Cover Image"
+        name: "cover"
+        widget: "object"
+        required: false
+        fields:
+          - { label: "Image URL", name: "image", widget: "string", required: false }
+          - { label: "Alt text", name: "alt", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
