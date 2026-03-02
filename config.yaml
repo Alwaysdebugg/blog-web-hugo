@@ -2,9 +2,9 @@
 # https://github.com/adityatelange/hugo-PaperMod
 
 baseURL: "https://jacvan.dev/"
-title: "Jf | Blogs"
+title: "Jacvan.dev"
 defaultContentLanguage: en
-copyright: "© {year} All rights reserved."
+copyright: "© {2026} All rights reserved."
 
 # Theme
 theme: PaperMod
@@ -67,6 +67,9 @@ params:
   mainSections: ["posts"]
   description: "dev world"
   author: "Jacky"
+
+  # Favicon
+  favicon: "favicon.ico"
 
   # Theme & display
   defaultTheme: auto        # light / dark / auto
