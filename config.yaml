@@ -19,6 +19,13 @@ enableEmoji: true
 pygmentsUseClasses: true
 mainsections: ["posts"]
 
+# Outputs - enable index.json for Search (Fuse.js)
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
 # Pagination - home page post list
 pagination:
   disableAliases: false
