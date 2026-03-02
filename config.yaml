@@ -1,7 +1,7 @@
 # Personal Blog - Hugo + PaperMod
 # https://github.com/adityatelange/hugo-PaperMod
 
-baseURL: "https://alwaysdebugg.github.io/"
+baseURL: "https://jacvan.dev/"
 title: "Jf | Blogs"
 defaultContentLanguage: en
 copyright: "© {year} All rights reserved."
@@ -76,17 +76,17 @@ params:
   # Comments - Giscus (GitHub Discussions)
   comments: true
   giscus:
-    repo: "your-username/your-repo"      # replace with your GitHub repo
-    repoId: ""                            # get from giscus.app
-    category: "Announcements"
-    categoryId: ""                        # get from giscus.app
+    repo: "Alwaysdebugg/blog-comments"
+    repoId: "R_kgDORcDvWQ"
+    category: "General"
+    categoryId: "DIC_kwDORcDvWc4C3fh9"
     mapping: "pathname"
     strict: "0"
     reactionsEnabled: "1"
     emitMetadata: "0"
     inputPosition: "bottom"
     theme: "preferred_color_scheme"       # light / dark / preferred_color_scheme
-    lang: "en"
+    lang: "zh-CN"
 
   # Home mode: false=post list, true=Profile
   profileMode:
