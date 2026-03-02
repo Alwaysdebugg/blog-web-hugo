@@ -1,0 +1,22 @@
+/*
+ * Code block display fixes for PaperMod theme
+ * - Prevents awkward word breaking in code
+ * - Ensures proper overflow for long lines
+ * - Fixes layout for both Chroma-highlighted and plain code blocks
+ */
+
+.post-content pre code {
+    word-break: normal;
+    overflow-wrap: normal;
+    white-space: pre;
+}
+
+.post-content pre {
+    overflow-x: auto;
+}
+
+/* Ensure code blocks inside lists display correctly */
+.post-content li pre,
+.post-content li .highlight {
+    margin-inline-start: 0;
+}

@@ -20,8 +20,8 @@ cover:
 
 第一层属性(Top-Level properties)：
 	对象直接包含的属性，不包括嵌套在里面的object或者array；
-	
-```
+
+```javascript
 const obj = {
     name: "Alice",   // 第一层属性（基本类型）
     age: 25,         // 第一层属性（基本类型）
@@ -29,13 +29,12 @@ const obj = {
         city: "New York"
     }
 };
-
 ```
 
 嵌套对象(Nested Object)：
 	 是指作为另一个对象的属性值的对象，简单来说就是，被套在另一个object中的object；
-	 
-```
+
+```javascript
 const obj = {
     name: "Alice",   
     age: 25,         
@@ -58,7 +57,7 @@ const obj = {
 			- 赋值时复制的是地址（reference）
 			- 多个变量会共享同一个对象的引用，修改其中一个会影响另一个
 
-```
+```javascript
 let a = { value: 10 };  // a 存储的是 { value: 10 } 的地址
 let b = a;  // b 复制了 a 的地址，而不是对象本身
 
@@ -66,7 +65,6 @@ b.value = 20;  // 修改 b.value 也会影响 a.value
 
 console.log(a.value);  // 20
 console.log(b.value);  // 20
-
 ```
 
 ### 因此得出结论：
